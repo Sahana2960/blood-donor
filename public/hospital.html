@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BloodConnect | Hospital Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🏥 Hospital Dashboard</h1>
+    <p>Find nearby donors by blood group and distance</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Search Donors</h2>
+      <form id="search-form">
+        <div class="row">
+          <select name="blood_group">
+            <option value="">Any Blood Group</option>
+            <option>A+</option><option>A-</option>
+            <option>B+</option><option>B-</option>
+            <option>AB+</option><option>AB-</option>
+            <option>O+</option><option>O-</option>
+          </select>
+        </div>
+        <button type="submit">Find Nearby Donors</button>
+      </form>
+    </section>
+
+    <section id="results" class="card">
+      <p>📍 Waiting for location detection...</p>
+    </section>
+  </main>
+
+  <script src="hospital.js"></script>
+</body>
+</html>

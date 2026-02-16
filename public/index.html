@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BloodConnect | Register as Donor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🩸 BloodConnect</h1>
+    <p>Bridging donors and hospitals instantly.</p>
+  </header>
+
+  <main>
+    <!-- Register Donor Section -->
+    <section class="card">
+      <h2>Register as a Donor</h2>
+      <form id="donor-form">
+        <div class="row">
+          <input name="name" placeholder="Full name" required />
+          <input name="age" type="number" placeholder="Age (18–65)" min="18" max="65" required />
+        </div>
+        <div class="row">
+          <input name="phone" placeholder="Phone number" required />
+          <input name="email" placeholder="Email (optional)" />
+        </div>
+        <div class="row">
+          <select name="blood_group" required>
+            <option value="">Select blood group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+          </select>
+          <input name="city" placeholder="City" required />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <div id="donor-msg" class="msg"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
